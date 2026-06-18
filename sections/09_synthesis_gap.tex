@@ -1,214 +1,214 @@
-% =============================================================================
-%  Synthesis and Research Gap Analysis
-%
-%  This is the analytical core of the SLR. All claims here must be grounded
-%  in the [N]-paper corpus assembled in Section~\ref{sec:methodology}.
-%
-%  Hints
-%  -----
-%  - Open with a brief signpost listing the five literature chapters and
-%    what this synthesis does with their findings.
-%  - Section 9.1: Analytical framework — name the N dimensions you will use
-%    to compare systems. These emerge from your literature, not from thin air.
-%    Justify each dimension: why is it a binary commitment, not a metric?
-%  - Section 9.2: Concept matrix — the key analytical artefact of the SLR.
-%    Every row is a system, every column is a dimension. Use \checkmark,
-%    (\checkmark), and $\times$ consistently. Add a "Combined reference profile"
-%    final row that is NOT a proposed system — it just aggregates what is
-%    covered across all reviewed works.
-%  - Section 9.3: Gap classification — organise gaps into quadrants using a
-%    2x2 axis (e.g., foundational/operational × system-level/component-level).
-%    The figure is the visual version; the prose explains the logic of the axes.
-%  - Section 9.4: Gap map table — each row is a gap, with: quadrant, gap
-%    description, evidence (which groups), unaddressed dimensions, and the
-%    open research question it defines. This table is the deliverable.
-%  - Section 9.5: Research directions — synthesise the gap map into a short
-%    narrative. State whether the overall research direction is coherent and
-%    motivated. Do not propose a solution.
-% =============================================================================
+ =============================================================================
+  Synthesis and Research Gap Analysis
+
+  This is the analytical core of the SLR. All claims here must be grounded
+  in the N-paper corpus assembled in Section~\ref{sec:methodology}.
+
+  Hints
+  -----
+  - Open with a brief signpost listing the five literature chapters and
+    what this synthesis does with their findings.
+  - Section 9.1: Analytical framework — name the N dimensions you will use
+    to compare systems. These emerge from your literature, not from thin air.
+    Justify each dimension: why is it a binary commitment, not a metric?
+  - Section 9.2: Concept matrix — the key analytical artefact of the SLR.
+    Every row is a system, every column is a dimension. Use \checkmark,
+    (\checkmark), and $\times$ consistently. Add a "Combined reference profile"
+    final row that is NOT a proposed system — it just aggregates what is
+    covered across all reviewed works.
+  - Section 9.3: Gap classification — organise gaps into quadrants using a
+    2x2 axis (e.g., foundational/operational × system-level/component-level).
+    The figure is the visual version; the prose explains the logic of the axes.
+  - Section 9.4: Gap map table — each row is a gap, with: quadrant, gap
+    description, evidence (which groups), unaddressed dimensions, and the
+    open research question it defines. This table is the deliverable.
+  - Section 9.5: Research directions — synthesise the gap map into a short
+    narrative. State whether the overall research direction is coherent and
+    motivated. Do not propose a solution.
+ =============================================================================
 
 \section{Synthesis and Research Gap Analysis}
 \label{sec:synthesis_gap}
 
-The preceding chapters reviewed [N] bodies of literature: [list chapter topics,
+The preceding chapters reviewed N bodies of literature: list chapter topics,
 one per section, e.g., "parameter-efficient fine-tuning, adapter composition,
-..."], each addressing part of the problem space outlined in
+...", each addressing part of the problem space outlined in
 Section~\ref{sec:introduction}. This chapter synthesises these findings into a
 structured account of what remains unaddressed. All gap claims are bounded by
-the [N]-paper corpus assembled in Section~\ref{sec:methodology}; they do not
+the N-paper corpus assembled in Section~\ref{sec:methodology}; they do not
 constitute claims about the broader literature.
 
-% =============================================================================
+ =============================================================================
 \subsection{Analytical Framework}
 \label{sec:synthesis_gap:formulation}
 
-% Hints:
-% - Define the N dimensions you will use to compare systems in the concept matrix.
-% - These dimensions must be derived inductively from the literature you reviewed,
-%   not imported from an external theory.
-% - Each dimension should be binary (a system either has the property or it
-%   doesn't) — avoid performance metrics here.
-% - State that Table~\ref{tab:concept_matrix} maps the reviewed literature against
-%   these dimensions.
+ Hints:
+ - Define the N dimensions you will use to compare systems in the concept matrix.
+ - These dimensions must be derived inductively from the literature you reviewed,
+   not imported from an external theory.
+ - Each dimension should be binary (a system either has the property or it
+   doesn't) — avoid performance metrics here.
+ - State that Table~\ref{tab:concept_matrix} maps the reviewed literature against
+   these dimensions.
 
-Drawing on the architectural properties that recur across the [N] reviewed
-bodies of literature, this section identifies [N] dimensions along which existing
-systems can be compared. [REPLACE: Briefly describe what the dimensions capture
-— e.g., functional requirements vs. structural properties.] No single system is
+Drawing on the architectural properties that recur across the N reviewed
+bodies of literature, this section identifies N dimensions along which existing
+systems can be compared. REPLACE: Briefly describe what the dimensions capture
+— e.g., functional requirements vs. structural properties. No single system is
 expected to satisfy all dimensions simultaneously; rather, their combination
 defines a research direction that the current literature has not yet explored as
 an integrated whole. Table~\ref{tab:concept_matrix} maps the reviewed literature
 against these dimensions.
 
-% =============================================================================
+ =============================================================================
 \subsection{Concept Matrix and Dimension Justification}
 \label{sec:synthesis_gap:matrix}
 
-% Hints:
-% - Justify each dimension with one bullet: what does it capture, and why is
-%   it a necessary binary commitment rather than a performance tradeoff?
-% - Also state which dimensions you explicitly EXCLUDED and why. This is a
-%   methodological honesty requirement.
-% - The binary \checkmark/$\times$ scheme avoids false precision. Reserve
-%   (\checkmark) for genuine partial satisfaction.
-% - The concept matrix table uses \rotatebox{70} for column headers — this is
-%   essential for keeping the table to a reasonable width.
+ Hints:
+ - Justify each dimension with one bullet: what does it capture, and why is
+   it a necessary binary commitment rather than a performance tradeoff?
+ - Also state which dimensions you explicitly EXCLUDED and why. This is a
+   methodological honesty requirement.
+ - The binary \checkmark/$\times$ scheme avoids false precision. Reserve
+   (\checkmark) for genuine partial satisfaction.
+ - The concept matrix table uses \rotatebox{70} for column headers — this is
+   essential for keeping the table to a reasonable width.
 
-The [N] dimensions were derived inductively from the architectural properties
+The N dimensions were derived inductively from the architectural properties
 that recur across the five reviewed bodies of literature. They were not defined
 a priori from an external theoretical framework, but emerged from the synthesis
 as the minimal set of binary commitments that distinguish the reviewed systems:
 
 \begin{itemize}
-  \item \textbf{[Dimension 1]}: [One sentence justifying why this is a required
-    binary commitment for your research direction.]
-  \item \textbf{[Dimension 2]}: [Justification.]
-  \item \textbf{[Dimension 3]}: [Justification.]
-  \item \textbf{[Dimension 4]}: [Justification.]
-  \item \textbf{[Dimension 5]}: [Justification.]
-  \item \textbf{[Dimension 6]}: [Justification.]
-  \item \textbf{[Dimension 7]}: [Justification.]
+  \item \textbf{Dimension 1}: One sentence justifying why this is a required
+    binary commitment for your research direction.
+  \item \textbf{Dimension 2}: Justification.
+  \item \textbf{Dimension 3}: Justification.
+  \item \textbf{Dimension 4}: Justification.
+  \item \textbf{Dimension 5}: Justification.
+  \item \textbf{Dimension 6}: Justification.
+  \item \textbf{Dimension 7}: Justification.
 \end{itemize}
 
-[REPLACE: State which dimensions were considered and excluded. Explain why
+REPLACE: State which dimensions were considered and excluded. Explain why
 (e.g., "Latency was excluded because it is an evaluation metric rather than an
-architectural commitment").]
+architectural commitment").
 
 The scoring uses a binary \checkmark/$\times$ scheme. The (\checkmark) partial
 marker is reserved for cases where a system addresses a dimension in a limited
 or indirect way.
 
-% --- Table 8: Concept matrix ---
-% Each row = one reviewed system + \citep{} reference.
-% Each column = one design dimension (use \rotatebox{70} for headers).
-% The last data row = "Combined reference profile" — aggregate of what IS
-%   covered across all works. NOT a proposed system.
-% Add/remove rows and columns to match your dimensions.
-\begin{table}[H]
+ --- Table 8: Concept matrix ---
+ Each row = one reviewed system + \citep{} reference.
+ Each column = one design dimension (use \rotatebox{70} for headers).
+ The last data row = "Combined reference profile" — aggregate of what IS
+   covered across all works. NOT a proposed system.
+ Add/remove rows and columns to match your dimensions.
+\begin{table}H
 \centering
 \footnotesize
-\caption{Concept matrix: related systems against [N] design dimensions.
+\caption{Concept matrix: related systems against N design dimensions.
          \checkmark\ = addressed; (\checkmark) = partially; $\times$ = not addressed.}
 \label{tab:concept_matrix}
 \setlength{\tabcolsep}{2pt}
 \begin{tabular}{p{3.8cm}*{7}{c}}
 \toprule
 \textbf{System} &
-\rotatebox{70}{\textbf{[Dimension 1]}} &
-\rotatebox{70}{\textbf{[Dimension 2]}} &
-\rotatebox{70}{\textbf{[Dimension 3]}} &
-\rotatebox{70}{\textbf{[Dimension 4]}} &
-\rotatebox{70}{\textbf{[Dimension 5]}} &
-\rotatebox{70}{\textbf{[Dimension 6]}} &
-\rotatebox{70}{\textbf{[Dimension 7]}} \\
+\rotatebox{70}{\textbf{Dimension 1}} &
+\rotatebox{70}{\textbf{Dimension 2}} &
+\rotatebox{70}{\textbf{Dimension 3}} &
+\rotatebox{70}{\textbf{Dimension 4}} &
+\rotatebox{70}{\textbf{Dimension 5}} &
+\rotatebox{70}{\textbf{Dimension 6}} &
+\rotatebox{70}{\textbf{Dimension 7}} \\
 \midrule
-% Row format:  System name \citep{Key} & \checkmark & $\times$ & ... \\
-[System 1] \citep{ExampleSys1} & \checkmark & $\times$   & $\times$   & $\times$   & $\times$   & $\times$   & \checkmark \\
-[System 2] \citep{ExampleSys2} & \checkmark & \checkmark & $\times$   & (\checkmark)& $\times$  & $\times$   & $\times$   \\
-[System 3] \citep{ExampleSys3} & \checkmark & \checkmark & $\times$   & $\times$   & \checkmark & $\times$   & (\checkmark)\\
-[System 4] \citep{ExampleSys4} & \checkmark & $\times$   & \checkmark & \checkmark & $\times$   & $\times$   & \checkmark \\
-[System 5] \citep{ExampleSys5} & \checkmark & \checkmark & $\times$   & $\times$   & $\times$   & (\checkmark)& $\times$   \\
-% Add more rows as needed (aim for 15–20 representative systems)
+ Row format:  System name \citep{Key} & \checkmark & $\times$ & ... \\
+System 1 \citep{ExampleSys1} & \checkmark & $\times$   & $\times$   & $\times$   & $\times$   & $\times$   & \checkmark \\
+System 2 \citep{ExampleSys2} & \checkmark & \checkmark & $\times$   & (\checkmark)& $\times$  & $\times$   & $\times$   \\
+System 3 \citep{ExampleSys3} & \checkmark & \checkmark & $\times$   & $\times$   & \checkmark & $\times$   & (\checkmark)\\
+System 4 \citep{ExampleSys4} & \checkmark & $\times$   & \checkmark & \checkmark & $\times$   & $\times$   & \checkmark \\
+System 5 \citep{ExampleSys5} & \checkmark & \checkmark & $\times$   & $\times$   & $\times$   & (\checkmark)& $\times$   \\
+ Add more rows as needed (aim for 15–20 representative systems)
 \midrule
 \textit{Combined reference profile} & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark & $\times$ & \checkmark \\
 \bottomrule
-\multicolumn{8}{p{\textwidth}}{\footnotesize$\dagger$\ [Add any footnotes needed to
-clarify a dimension's scoring rationale.]}
+\multicolumn{8}{p{\textwidth}}{\footnotesize$\dagger$\ Add any footnotes needed to
+clarify a dimension's scoring rationale.}
 \end{tabular}
 \end{table}
 
-[REPLACE: Explain what the combined reference profile row represents. Emphasise
+REPLACE: Explain what the combined reference profile row represents. Emphasise
 that it is NOT a proposed system — it aggregates what is already covered across
-all reviewed works. State that no single system satisfies all dimensions.]
+all reviewed works. State that no single system satisfies all dimensions.
 
-% =============================================================================
+ =============================================================================
 \subsection{Four-Quadrant Gap Classification}
 \label{sec:synthesis_gap:gaps}
 
-% Hints:
-% - Define your two axes explicitly and justify why these axes were chosen.
-%   Typical axes: (type of work: foundational/operational) × (scope: system/component).
-% - Each quadrant must contain at least one gap. Name each gap with a short
-%   label (e.g., "Adapter Knowledge Unit", "Decentralised Discovery").
-% - The quadrant figure is a 2×2 scatter plot with gap names as labelled dots.
-%   Produce it externally and reference it here.
-% - After the figure, dedicate one paragraph per quadrant explaining the gaps
-%   it contains and the type of research effort required.
+ Hints:
+ - Define your two axes explicitly and justify why these axes were chosen.
+   Typical axes: (type of work: foundational/operational) × (scope: system/component).
+ - Each quadrant must contain at least one gap. Name each gap with a short
+   label (e.g., "Adapter Knowledge Unit", "Decentralised Discovery").
+ - The quadrant figure is a 2×2 scatter plot with gap names as labelled dots.
+   Produce it externally and reference it here.
+ - After the figure, dedicate one paragraph per quadrant explaining the gaps
+   it contains and the type of research effort required.
 
 The gaps visible in Table~\ref{tab:concept_matrix} are classified into four
 quadrants (Figure~\ref{fig:gap_quadrant}) based on their nature: conceptual,
 algorithmic, systems, or empirical.
 
 The horizontal axis separates gaps by the type of work required to address them:
-[describe left side] vs. [describe right side]. The vertical axis separates gaps
-by scope: [describe top] vs. [describe bottom].
+describe left side vs. describe right side. The vertical axis separates gaps
+by scope: describe top vs. describe bottom.
 
-\begin{figure}[H]
+\begin{figure}H
   \centering
-  \includegraphics[width=0.85\linewidth]{fig_gap_quadrant.pdf}
+  \includegraphics{fig_gap_quadrant.pdf}
   \caption{Research gap taxonomy: gaps identified from the concept matrix
            classified into four quadrants by type of work required and scope
            of effect.}
   \label{fig:gap_quadrant}
 \end{figure}
 
-% [One paragraph per quadrant]
+ One paragraph per quadrant
 \textbf{Conceptual gaps (top-left).}
-[REPLACE: Describe the gap(s) in this quadrant. What foundational framing or
-conceptual construct is missing from the reviewed literature?]
+REPLACE: Describe the gap(s) in this quadrant. What foundational framing or
+conceptual construct is missing from the reviewed literature?
 
 \textbf{Systems gaps (top-right).}
-[REPLACE: Describe the system-level implementation questions that remain open.]
+REPLACE: Describe the system-level implementation questions that remain open.
 
 \textbf{Algorithmic gaps (bottom-right).}
-[REPLACE: Describe the component-level algorithmic or representational
-questions that remain open.]
+REPLACE: Describe the component-level algorithmic or representational
+questions that remain open.
 
 \textbf{Empirical gaps (bottom-left).}
-[REPLACE: Describe the theoretical/empirical questions that require formal
-derivation or controlled experiments to resolve.]
+REPLACE: Describe the theoretical/empirical questions that require formal
+derivation or controlled experiments to resolve.
 
-% =============================================================================
+ =============================================================================
 \subsection{Research Gap Map}
 \label{sec:synthesis_gap:gap_map}
 
-% Hints:
-% - This table is the primary deliverable of the SLR.
-% - Columns: Quadrant | Gap Description | Evidence (which groups) |
-%            Dimensions Unaddressed | Open Research Question.
-% - One row per gap. Typically 6–10 gaps.
-% - The "Open Research Question" column must phrase each gap as a concrete,
-%   answerable research question — not a wish list.
-% - Use \multirow for the Quadrant column when multiple gaps share a quadrant.
+ Hints:
+ - This table is the primary deliverable of the SLR.
+ - Columns: Quadrant | Gap Description | Evidence (which groups) |
+            Dimensions Unaddressed | Open Research Question.
+ - One row per gap. Typically 6–10 gaps.
+ - The "Open Research Question" column must phrase each gap as a concrete,
+   answerable research question — not a wish list.
+ - Use \multirow for the Quadrant column when multiple gaps share a quadrant.
 
 Table~\ref{tab:gap_map} consolidates the gaps identified in this review,
 organised by quadrant. This map constitutes the primary analytical contribution
 of the SLR: a structured account of what the literature has not yet addressed
 and what a future research programme in this direction must resolve.
 
-% --- Table 9: Research gap map ---
-% Adjust column widths (p{Xcm}) to fit your content.
-\begin{table}[H]
+ --- Table 9: Research gap map ---
+ Adjust column widths (p{Xcm}) to fit your content.
+\begin{table}H
 \centering
 \caption{Research gap map: identified gaps grouped by quadrant, with evidence
          base, unaddressed dimensions, and open research question.}
@@ -224,57 +224,57 @@ and what a future research programme in this direction must resolve.
 \textbf{Open Research Question} \\
 \midrule
 Conceptual &
-  [REPLACE: one-sentence description of the conceptual gap] &
+  REPLACE: one-sentence description of the conceptual gap &
   G0--G6 &
-  [Dimension names] &
-  [REPLACE: phrase as a concrete research question] \\
+  Dimension names &
+  REPLACE: phrase as a concrete research question \\
 \midrule
 \multirow{3}{*}{Algorithmic} &
-  [REPLACE: gap description 1] & [G-groups] & [Dimensions] &
-  [REPLACE: research question] \\[4pt]
+  REPLACE: gap description 1 & G-groups & Dimensions &
+  REPLACE: research question \\4pt
   &
-  [REPLACE: gap description 2] & [G-groups] & [Dimensions] &
-  [REPLACE: research question] \\[4pt]
+  REPLACE: gap description 2 & G-groups & Dimensions &
+  REPLACE: research question \\4pt
   &
-  [REPLACE: gap description 3] & [G-groups] & [Dimensions] &
-  [REPLACE: research question] \\
+  REPLACE: gap description 3 & G-groups & Dimensions &
+  REPLACE: research question \\
 \midrule
 \multirow{2}{*}{Systems} &
-  [REPLACE: gap description 1] & [G-groups] & [Dimensions] &
-  [REPLACE: research question] \\[4pt]
+  REPLACE: gap description 1 & G-groups & Dimensions &
+  REPLACE: research question \\4pt
   &
-  [REPLACE: gap description 2] & [G-groups] & [Dimensions] &
-  [REPLACE: research question] \\
+  REPLACE: gap description 2 & G-groups & Dimensions &
+  REPLACE: research question \\
 \midrule
 \multirow{2}{*}{Empirical} &
-  [REPLACE: gap description 1] & [G-groups] & [Dimensions] &
-  [REPLACE: research question] \\[4pt]
+  REPLACE: gap description 1 & G-groups & Dimensions &
+  REPLACE: research question \\4pt
   &
-  [REPLACE: gap description 2] & [G-groups] & [Dimensions] &
-  [REPLACE: research question] \\
+  REPLACE: gap description 2 & G-groups & Dimensions &
+  REPLACE: research question \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-% =============================================================================
+ =============================================================================
 \subsection{Research Directions and Open Problems}
 \label{sec:synthesis_gap:directions}
 
-% Hints:
-% - This section synthesises the gap map into a narrative, not a list.
-% - Identify the ordering or priority among gaps. Which gap is a prerequisite
-%   for which? (e.g., a conceptual framing gap may need to be resolved before
-%   algorithmic gaps become tractable.)
-% - End with a sentence assessing the overall research direction:
-%   is it coherent? theoretically motivated? empirically unexplored?
-% - Do NOT propose your own solution here — this is still the SLR.
+ Hints:
+ - This section synthesises the gap map into a narrative, not a list.
+ - Identify the ordering or priority among gaps. Which gap is a prerequisite
+   for which? (e.g., a conceptual framing gap may need to be resolved before
+   algorithmic gaps become tractable.)
+ - End with a sentence assessing the overall research direction:
+   is it coherent? theoretically motivated? empirically unexplored?
+ - Do NOT propose your own solution here — this is still the SLR.
 
-[REPLACE: Synthesise the gap map into a narrative. Describe the ordering
+REPLACE: Synthesise the gap map into a narrative. Describe the ordering
 relationship among gaps. State which gap is foundational (a prerequisite
-for the others). Assess the overall research direction.]
+for the others). Assess the overall research direction.
 
-Taken together, these findings support the assessment that [REPLACE: your
-research direction] is a coherent, theoretically motivated, and empirically
+Taken together, these findings support the assessment that REPLACE: your
+research direction is a coherent, theoretically motivated, and empirically
 unexplored direction. The evidence base assembled in this review indicates
 that the constituent fields each contribute necessary but individually
 insufficient pieces. The gap map in Table~\ref{tab:gap_map} provides a
