@@ -1,0 +1,193 @@
+% =============================================================================
+%  Systematic Literature Review — Template
+%
+%  Author      : [Your Name]
+%  Institution : [Your University / Faculty]
+%  Framework   : PRISMA 2020 · Wohlin (2014) · Xiao & Watson (2019)
+%  Date        : [Month Year]
+%
+%  Usage
+%  -----
+%  This template is designed for PhD students conducting a Systematic
+%  Literature Review (SLR). Each section file lives in sections/.
+%  Replace every [PLACEHOLDER] with your own content.
+%  Delete commented-out hints once you no longer need them.
+%
+%  Compilation: pdflatex → bibtex → pdflatex → pdflatex
+%               (or use latexmk -pdf main.tex)
+% =============================================================================
+
+\documentclass[a4paper,12pt]{article}
+
+% --- Encoding & language ---
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+
+% --- Page layout ---
+\usepackage{geometry}
+\geometry{
+  a4paper,
+  margin=2.5cm
+}
+
+% --- Fonts & symbols ---
+\usepackage{textcomp}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+% --- Graphics & floats ---
+\usepackage{graphicx}
+\usepackage{svg}
+\graphicspath{{figures/}}
+\usepackage{float}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{rotating}
+
+% --- Captions & subfigures ---
+\usepackage[font=small]{caption}
+\usepackage{subcaption}
+\captionsetup[figure]{name=\textbf{Figure}}
+\captionsetup[table]{name=\textbf{Table}}
+
+% --- Colors ---
+\usepackage{xcolor}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+% --- Spacing & paragraphs ---
+\usepackage{setspace}
+\onehalfspacing
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.5em}
+
+% --- Section numbering (Arabic with trailing dot) ---
+\renewcommand{\thesection}{\arabic{section}.}
+\renewcommand{\thesubsection}{\thesection\arabic{subsection}.}
+\renewcommand{\thesubsubsection}{\thesubsection\arabic{subsubsection}.}
+
+% --- Tables ---
+\usepackage{longtable}
+\usepackage{tabularx}
+\usepackage{multirow}
+
+% --- Bibliography (natbib) ---
+% natbib supports both \citet{} and \citep{} (Harvard author-year style).
+% The options below produce numbered citations sorted by order of appearance.
+% To switch to author-year, replace "numbers" with "authoryear".
+\usepackage[square,sort,comma,numbers]{natbib}
+\bibliographystyle{plainnat}
+
+% --- Listings (code snippets) ---
+\usepackage{listings}
+\lstloadlanguages{bash}
+\renewcommand{\lstlistingname}{\textbf{Code snippet}}
+\lstset{
+  frame=tblr,
+  language=Bash,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+% --- Appendix ---
+\usepackage[toc,page]{appendix}
+\renewcommand{\appendixname}{Appendix}
+
+% --- TOC and references ---
+\usepackage[nottoc]{tocbibind}
+
+% --- Checkmarks (used in concept matrix) ---
+\usepackage{pifont}
+
+% --- Hyperlinks (load last) ---
+\usepackage[
+  colorlinks=true,
+  linkcolor=black,
+  citecolor=dkgreen,
+  urlcolor=blue,
+  pdftitle={[Your SLR Title]},
+  pdfauthor={[Your Name]}
+]{hyperref}
+
+% =============================================================================
+%  Document begins
+% =============================================================================
+\begin{document}
+
+% --- Title page ---
+\begin{titlepage}
+  \centering
+  \vspace*{2cm}
+  {\Large\bfseries [Your University]\\
+   [Your Faculty]\par}
+  \vspace{2cm}
+
+  {\LARGE\bfseries [Main Title of Your SLR]\par}
+  \vspace{1.5cm}
+  {\large [Subtitle — Optional]\par}
+  \vspace{2.5cm}
+  {\large [Your Name]\par}
+  \vspace{0.3cm}
+  {\normalsize [Doctoral Study Programme in ...]\par}
+  \vspace{0.7cm}
+  {\normalsize
+    Topic: [Course / Topic Name]\\
+    Supervisor: [Supervisor Name and Title]\par}
+  \vspace{1cm}
+  {\normalsize [Month Year]\par}
+\end{titlepage}
+
+% --- Abstract ---
+\input{sections/00_abstract}
+
+\newpage
+\tableofcontents
+\newpage
+
+% --- Main sections ---
+\input{sections/01_introduction}
+\newpage
+\input{sections/02_background}
+\newpage
+\input{sections/03_methodology}
+\newpage
+% Literature review chapters — one file per thematic cluster.
+% Rename files and adjust \input lines to match your corpus structure.
+\input{sections/04_literature_cluster_1}
+\newpage
+\input{sections/05_literature_cluster_2}
+\newpage
+\input{sections/06_literature_cluster_3}
+\newpage
+\input{sections/07_literature_cluster_4}
+\newpage
+\input{sections/08_literature_cluster_5}
+\newpage
+\input{sections/09_synthesis_gap}
+\newpage
+\input{sections/10_conclusion}
+
+% --- Bibliography ---
+\newpage
+\bibliography{bibliography}
+
+% --- Appendices ---
+\newpage
+\begin{appendices}
+\input{sections/11_appendix}
+\end{appendices}
+
+\end{document}

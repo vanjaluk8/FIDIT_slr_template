@@ -1,0 +1,208 @@
+% =============================================================================
+%  bibliography.bib — SLR Template
+%
+%  Key convention: FirstAuthorLastnameYearShortTitle
+%  e.g., Houlsby2019, McMahan2017, Page2021
+%
+%  Style: plainnat with natbib [square,sort,comma,numbers]
+%  In-text:   \citet{Key}   → Author (Year)
+%  Parenthetical: \citep{Key} → (Author, Year)  or  [N] in numbered mode
+%
+%  -------------------------------------------------------------------------
+%  CITATION STYLE QUICK REFERENCE
+%  -------------------------------------------------------------------------
+%  \citet{A}            Author (Year)
+%  \citep{A}            (Author, Year)   — or [N] in numbered mode
+%  \citet{A,B}          Author (Year); Author (Year)
+%  \citep{A,B}          (Author, Year; Author, Year)
+%  \citeauthor{A}       Author              — name only, no year
+%  \citeyear{A}         Year               — year only, no name
+%  \citep[p.~5]{A}      (Author, Year, p. 5) — with page number
+%  -------------------------------------------------------------------------
+%
+%  ENTRY TYPE EXAMPLES
+%  -------------------
+%  This file contains:
+%  1. All SLR methodology references (keep these — they are universal).
+%  2. One example of each common entry type with full field set.
+%     Replace or extend with your own domain references.
+%
+%  Common entry types:
+%    @article        — journal paper
+%    @inproceedings  — conference paper (preferred over @conference)
+%    @techreport     — technical report
+%    @misc           — arXiv preprint, software, datasets, web resources
+%    @phdthesis      — doctoral thesis
+%    @book           — monograph
+% =============================================================================
+
+
+% =============================================================================
+%  SECTION 1 — SLR METHODOLOGY REFERENCES
+%  These references are universal to any PRISMA-based SLR.
+%  Keep them as-is and cite them in your Methodology chapter.
+% =============================================================================
+
+@article{XiaoWatson2019,
+  author    = {Xiao, Yu and Watson, Richard T.},
+  title     = {Guidance on Conducting a Systematic Literature Review},
+  journal   = {Journal of Planning Education and Research},
+  volume    = {39},
+  number    = {1},
+  pages     = {93--112},
+  year      = {2019},
+  doi       = {10.1177/0739456X17723971}
+}
+
+@inproceedings{Wohlin2014,
+  author    = {Wohlin, Claes},
+  title     = {Guidelines for Snowballing in Systematic Literature Studies
+               and a Replication in Software Engineering},
+  booktitle = {Proceedings of the 18th International Conference on Evaluation
+               and Assessment in Software Engineering (EASE)},
+  year      = {2014},
+  doi       = {10.1145/2601248.2601268}
+}
+
+@article{Page2021,
+  author    = {Page, Matthew J. and McKenzie, Joanne E. and Bossuyt, Patrick M.
+               and Boutron, Isabelle and Hoffmann, Tammy C. and Mulrow, Cynthia D.
+               and others},
+  title     = {The {PRISMA} 2020 Statement: An Updated Guideline for Reporting
+               Systematic Reviews},
+  journal   = {BMJ},
+  volume    = {372},
+  pages     = {n71},
+  year      = {2021},
+  doi       = {10.1136/bmj.n71}
+}
+
+@techreport{KitchenhamCharters2007,
+  author      = {Kitchenham, Barbara and Charters, Stuart},
+  title       = {Guidelines for Performing Systematic Literature Reviews in
+                 Software Engineering},
+  institution = {Keele University},
+  number      = {EBSE-2007-01},
+  year        = {2007}
+}
+
+@article{Keshav2007,
+  author  = {Keshav, Srinivasan},
+  title   = {How to Read a Paper},
+  journal = {ACM SIGCOMM Computer Communication Review},
+  volume  = {37},
+  number  = {3},
+  pages   = {83--84},
+  year    = {2007}
+}
+
+@article{Webster2002,
+  author  = {Webster, Jane and Watson, Richard T.},
+  title   = {Analyzing the Past to Prepare for the Future:
+             Writing a Literature Review},
+  journal = {MIS Quarterly},
+  volume  = {26},
+  number  = {2},
+  pages   = {xiii--xxiii},
+  year    = {2002}
+}
+
+
+% =============================================================================
+%  SECTION 2 — ENTRY TYPE EXAMPLES
+%  Replace these with your actual domain references.
+%  The field names and formatting follow the natbib/plainnat conventions.
+% =============================================================================
+
+% ---------------------------------------------------------------------------
+% @article — journal paper
+% Required: author, title, journal, year
+% Recommended: volume, number, pages, doi
+% ---------------------------------------------------------------------------
+@article{ExampleJournalArticle2023,
+  author    = {Surname, Firstname and Coauthor, Name},
+  title     = {Title of the Journal Article},
+  journal   = {Name of the Journal},
+  volume    = {42},
+  number    = {3},
+  pages     = {100--115},
+  year      = {2023},
+  doi       = {10.XXXX/example.doi}
+}
+
+% ---------------------------------------------------------------------------
+% @inproceedings — conference paper
+% Required: author, title, booktitle, year
+% Recommended: pages, doi, address, publisher
+% ---------------------------------------------------------------------------
+@inproceedings{ExampleConferencePaper2022,
+  author    = {Surname, Firstname and Coauthor, Name},
+  title     = {Title of the Conference Paper},
+  booktitle = {Proceedings of the International Conference on [Topic] (CONF)},
+  pages     = {1234--1245},
+  year      = {2022},
+  doi       = {10.XXXX/example.doi}
+}
+
+% ---------------------------------------------------------------------------
+% @misc — arXiv preprint
+% Use for papers not yet published in a peer-reviewed venue.
+% Include howpublished and note fields for clarity.
+% ---------------------------------------------------------------------------
+@misc{ExampleArxivPreprint2024,
+  author        = {Surname, Firstname and Coauthor, Name},
+  title         = {Title of the arXiv Preprint},
+  howpublished  = {arXiv preprint arXiv:2401.XXXXX},
+  year          = {2024},
+  doi           = {10.48550/arXiv.2401.XXXXX}
+}
+
+% ---------------------------------------------------------------------------
+% @phdthesis — doctoral dissertation
+% Required: author, title, school, year
+% Recommended: type (if not "PhD thesis"), address
+% ---------------------------------------------------------------------------
+@phdthesis{ExamplePhDThesis2021,
+  author  = {Surname, Firstname},
+  title   = {Title of the Doctoral Thesis},
+  school  = {University Name, Faculty of [Name]},
+  year    = {2021}
+}
+
+% ---------------------------------------------------------------------------
+% @techreport — technical report
+% Required: author, title, institution, year
+% Recommended: number, type
+% ---------------------------------------------------------------------------
+@techreport{ExampleTechReport2020,
+  author      = {Surname, Firstname and Coauthor, Name},
+  title       = {Title of the Technical Report},
+  institution = {Research Lab or University Name},
+  number      = {TR-2020-01},
+  year        = {2020}
+}
+
+% ---------------------------------------------------------------------------
+% @book — monograph
+% Required: author or editor, title, publisher, year
+% Recommended: address (publisher city), edition
+% ---------------------------------------------------------------------------
+@book{ExampleBook2019,
+  author    = {Surname, Firstname},
+  title     = {Title of the Book},
+  publisher = {Publisher Name},
+  address   = {City, Country},
+  year      = {2019}
+}
+
+% ---------------------------------------------------------------------------
+% @misc — dataset or software
+% Use when citing a dataset release or software package.
+% ---------------------------------------------------------------------------
+@misc{ExampleDataset2023,
+  author       = {{Organisation or Author(s)}},
+  title        = {Name of the Dataset or Software},
+  howpublished = {\url{https://example.org/dataset}},
+  year         = {2023},
+  note         = {Accessed: YYYY-MM-DD}
+}
