@@ -1,0 +1,115 @@
+% =============================================================================
+%  Background
+%
+%  Hints
+%  -----
+%  - Cover the technical foundations that every reader needs before Chapter 3.
+%    Typically 2–4 subsections: one per domain your SLR sits at the
+%    intersection of.
+%  - Do NOT review the literature here — that belongs in Sections 4–8.
+%    Background introduces concepts; later chapters evaluate papers.
+%  - Include equations for any formal objects your SLR references
+%    (e.g., a loss function, an algorithm step). Label every equation
+%    with \label{eq:...} so you can \ref{} it later.
+%  - Each subsection should end by connecting the concept to your SLR's
+%    research question.
+%  - Opening sentence: "Readers familiar with [X] may proceed directly to
+%    Section~\ref{sec:methodology}."
+% =============================================================================
+
+\section{Background}
+\label{sec:background}
+
+This chapter introduces the technical foundations on which the remainder of
+this review depends: [subsection 1 topic], [subsection 2 topic], and
+[subsection 3 topic]. Readers familiar with these topics may proceed directly
+to Section~\ref{sec:methodology}.
+
+% =============================================================================
+\subsection{[First Technical Foundation]}
+\label{sec:background:topic1}
+
+% Hints:
+% - 2–4 paragraphs.
+% - Define the key formal objects (architectures, protocols, algorithms).
+% - Include a named equation or two if the concept is formal.
+% - Close by explaining why this foundation matters for your SLR's gap.
+
+[REPLACE: Introduce the first foundational topic. Define key terms and
+concepts. Cite the original papers \citep{ExampleFoundation2020}.]
+
+% --- Example: a numbered, labelled equation ---
+% Replace with your own equations or delete if not needed.
+\begin{equation}
+  f(x) = W_2 \, \sigma(W_1 x + b_1) + b_2
+  \label{eq:example_mlp}
+\end{equation}
+
+[REPLACE: Explain what the equation represents and what each symbol denotes.]
+
+% --- Example: a figure ---
+% Place your PDF/PNG in the figures/ directory and adjust the filename.
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.75\linewidth]{fig_example_background_1.pdf}
+  \caption{[REPLACE: Caption describing what the figure shows and why it
+           matters for the review. Cite the source if adapted from
+           prior work \citep{ExampleFigureSource2021}.]}
+  \label{fig:background_topic1}
+\end{figure}
+
+% =============================================================================
+\subsection{[Second Technical Foundation]}
+\label{sec:background:topic2}
+
+% Hints:
+% - Keep the same structure as above.
+% - If this topic has a well-known taxonomy (e.g., three canonical approaches),
+%   use an \enumerate list followed by equations for each.
+
+[REPLACE: Introduce the second foundational topic.]
+
+\begin{enumerate}
+  \item \textbf{[Approach A]} \citep{ExampleA2019}: [one-sentence description
+    of the approach and its key property].
+  \item \textbf{[Approach B]} \citep{ExampleB2022}: [one-sentence description].
+  \item \textbf{[Approach C]} \citep{ExampleC2021}: [one-sentence description].
+\end{enumerate}
+
+% --- Example: two related equations with \label ---
+\begin{equation}
+  \Delta W = B A, \quad B \in \mathbb{R}^{d \times r},\; A \in \mathbb{R}^{r \times k}
+  \label{eq:example_low_rank}
+\end{equation}
+
+\begin{equation}
+  h \leftarrow h + \frac{\alpha}{r}\, x B A
+  \label{eq:example_residual}
+\end{equation}
+
+[REPLACE: Explain Equations~\ref{eq:example_low_rank}
+and~\ref{eq:example_residual}. Note what each symbol represents and what
+structural property motivates this approach.]
+
+% =============================================================================
+\subsection{[Third Technical Foundation]}
+\label{sec:background:topic3}
+
+% Hints:
+% - For systems-level concepts (protocols, data structures), define the
+%   key primitives with their complexity in Big-O notation where relevant.
+% - Include a second figure if the concept is spatial/procedural
+%   (e.g., a network diagram, a protocol sequence).
+
+[REPLACE: Introduce the third foundational topic. Define key data structures,
+protocols, or algorithms \citep{ExampleProtocol2002}.]
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.9\linewidth]{fig_example_background_2.pdf}
+  \caption{[REPLACE: Caption for second background figure.]}
+  \label{fig:background_topic2}
+\end{figure}
+
+[REPLACE: Conclude by explaining how these two primitives together form the
+infrastructure layer relevant to your research direction.]
